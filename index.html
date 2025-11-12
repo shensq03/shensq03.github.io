@@ -109,7 +109,7 @@
                     电子科技大学计算机硕士研究生
                 </p>
                 <p class="text-base sm:text-lg text-gray-500 mb-8">
-                    研究方向：时序预测、小样本机器学习、计算机视觉、数字文旅与科技融合
+                    研究方向：时序预测、前后端开发、机器学习、计算机视觉、数字文旅与科技融合
                 </p>
 
                 <!-- 基础信息与联系方式 -->
@@ -142,10 +142,10 @@
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">时序预测</span>
                         <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">机器学习</span>
+                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">前后端开发</span>
                         <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">目标检测</span>
                         <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">小样本学习</span>
                         <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">数据挖掘</span>
-                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Web开发</span>
                         <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">数字文旅</span>
                     </div>
                 </div>
@@ -393,55 +393,69 @@
         <!-- 项目筛选标签 -->
         <div class="max-w-4xl mx-auto mb-10 flex flex-wrap justify-center gap-2 sm:gap-3">
             <button class="project-filter px-4 py-2 bg-primary text-white rounded-full text-sm font-medium" data-filter="all">全部项目</button>
-            <button class="project-filter px-4 py-2 bg-gray-200 hover:bg-gray-300 transition-colors rounded-full text-sm font-medium" data-filter="ai">AI与机器学习</button>
-            <button class="project-filter px-4 py-2 bg-gray-200 hover:bg-gray-300 transition-colors rounded-full text-sm font-medium" data-filter="agri">智慧农业</button>
-            <button class="project-filter px-4 py-2 bg-gray-200 hover:bg-gray-300 transition-colors rounded-full text-sm font-medium" data-filter="culture">数字文旅</button>
+            <button class="project-filter px-4 py-2 bg-gray-200 hover:bg-gray-300 transition-colors rounded-full text-sm font-medium" data-filter="keyan">科研项目</button>
+            <button class="project-filter px-4 py-2 bg-gray-200 hover:bg-gray-300 transition-colors rounded-full text-sm font-medium" data-filter="kaifa">开发项目</button>
+            <!-- <button class="project-filter px-4 py-2 bg-gray-200 hover:bg-gray-300 transition-colors rounded-full text-sm font-medium" data-filter="shijian">实践项目</button> -->
         </div>
 
         <!-- 项目卡片容器 -->
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            <!-- 项目1：遥感林木计数模型 -->
-            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="ai">
+
+            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="keyan">
                 <div class="flex justify-between items-center mb-3">
-                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">机器学习与目标检测</span>
-                    <span class="text-sm text-gray-500">2024.02-2024.10</span>
+                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">科研项目</span>
+                    <span class="text-sm text-gray-500">2024.02-2024.09</span>
                 </div>
                 <h3 class="text-xl font-semibold text-dark mb-3">基于小样本的遥感林木计数模型研究</h3>
                 <div class="space-y-3 text-gray-700 text-sm sm:text-base">
                     <h4 class="font-medium text-primary">核心工作：</h4>
                     <ul class="list-disc list-inside space-y-1 pl-2">
-                        <li>提出少样本林木密度映射计数模型，在5个示范区试点验证，<span class="text-highlight">计数精度提升37.7%</span></li>
-                        <li>研发交互式可视化平台，将林木密度数据转化为生态地图，以科技赋能生态叙事</li>
-                        <li>通过梯度分析、对比实验及消融实验，验证方法有效性与泛化能力</li>
+                        <li>针对遥感林木计数中大规模数据标注的挑战，我们首次引入小样本遥感林木计数任务</li>
+                        <li>设计了一种相似关系感知的少样本林木密度映射计数网络，能够在样本间自适应地学习不同特征、形态和高度的林木相关性</li>
+                        <li>有效提升了在数据稀缺和标注有限情况下的计数精度与鲁棒性</li>
                     </ul>
                     <h4 class="font-medium text-primary mt-2">项目价值：</h4>
-                    <p>以第一作者身份撰写机器学习领域相关论文"Similarity-aware Few-shot Tree Density Mapping and Counting Network"；形成“理论创新-技术突破-产业应用”链条，系统可纳入“数字乡村”管理体系，助力生态保护与文化表达。</p>
+                    <p>通过梯度分析、对比实验及消融实验，验证了该方法的有效性与泛化能力。并以第一作者身份撰写论文"Similarity-aware Few-shot Tree Density Mapping and Counting Network"</p>
                 </div>
             </div>
 
-            <!-- 项目2：智慧农业病虫害检测系统 -->
-            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="agri">
+            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="keyan">
                 <div class="flex justify-between items-center mb-3">
-                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">机器学习与目标检测</span>
+                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">科研项目</span>
                     <span class="text-sm text-gray-500">2023.11-2024.02</span>
                 </div>
                 <h3 class="text-xl font-semibold text-dark mb-3">智慧农业与植物病虫害的智能生态检测系统</h3>
                 <div class="space-y-3 text-gray-700 text-sm sm:text-base">
                     <h4 class="font-medium text-primary">核心工作：</h4>
                     <ul class="list-disc list-inside space-y-1 pl-2">
-                        <li>结合Faster R-CNN、YOLOv3、RetinaNet等算法，搭建监测系统，覆盖12类作物病害，<span class="text-highlight">诊断准确率达89.7%</span></li>
-                        <li>采用数据可视化技术，构建病虫害监测图谱，展现作物健康状况与治理趋势</li>
-                        <li>通过“精准防控-减药减损-知识普惠”体系，探索生态智慧与丝路农业历史关联</li>
+                        <li>针对植物病虫害的精准检测与分类需求，本项目应用 Faster R-CNN、Cascade R-CNN、YOLOF、YOLOv3、RetinaNet 等多种目标检测算法，在植物病虫害数据集上进行训练与优化</li>
+                        <li>实现高效的目标检测与分类功能，并绘制了分类损失与平均精度（mAP）的变化对比图</li>
                     </ul>
                     <h4 class="font-medium text-primary mt-2">项目价值：</h4>
-                    <p>推动乡村智慧农业发展，为可持续农业模式提供技术支撑，降低农药使用量与作物损失。</p>
+                    <p>通过对比实验分析，确定了YOLOF算法在检测效果上表现最佳，取得了39.2的 mAP最优值，展现了其在植物病虫害检测任务中的优异性能</p>
                 </div>
             </div>
 
-            <!-- 项目3：苏游通小程序 -->
-            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="culture">
+            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="kaifa">
                 <div class="flex justify-between items-center mb-3">
-                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">数字文旅与Web开发</span>
+                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">开发项目</span>
+                    <span class="text-sm text-gray-500">2025.08-2025.09</span>
+                </div>
+                <h3 class="text-xl font-semibold text-dark mb-3">基于MCP的Vibe Coding工作流增强工具</h3>
+                <div class="space-y-3 text-gray-700 text-sm sm:text-base">
+                    <h4 class="font-medium text-primary">核心工作：</h4>
+                    <ul class="list-disc list-inside space-y-1 pl-2">
+                        <li>针对 AI 编程中代码生成实用性差、协作流程不统一的问题，我们基于MCP与TypeScript 开发了一款vibe-workflow工具</li>
+                        <li>该工具集成提示词模板管理与工作流优化两大模块，通过场景化提示词库、动态参数机制与标准化、可迭代的工作流模板,提升了 AI 编码的规范性与效率</li>
+                    </ul>
+                    <h4 class="font-medium text-primary mt-2">项目价值：</h4>
+                    <p>工具已封装为独立 MCP 工具包并发布至 npm，支持一键安装与便捷配置</p>
+                </div>
+            </div>
+
+            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="kaifa">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">开发项目</span>
                     <span class="text-sm text-gray-500">2023.08-2023.09</span>
                 </div>
                 <h3 class="text-xl font-semibold text-dark mb-3">“苏游通”小程序——苏州文旅数字化升级</h3>
@@ -457,10 +471,9 @@
                 </div>
             </div>
 
-            <!-- 项目4：新疆和田数字叙事项目 -->
-            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="culture">
+            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="kaifa">
                 <div class="flex justify-between items-center mb-3">
-                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">数字文旅与Web开发</span>
+                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">开发项目</span>
                     <span class="text-sm text-gray-500">2025.04-2025.05</span>
                 </div>
                 <h3 class="text-xl font-semibold text-dark mb-3">新疆和田非遗与生态旅游融合的数字叙事项目</h3>
@@ -473,6 +486,43 @@
                     </ul>
                     <h4 class="font-medium text-primary mt-2">项目价值：</h4>
                     <p>形成“文化保护-产业创新-生态旅游”闭环，为边疆民族地区文化振兴提供“科技+生态”双驱解决方案。</p>
+                </div>
+            </div>
+
+            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="kaifa">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">开发项目</span>
+                    <span class="text-sm text-gray-500">2025.06-2025.08</span>
+                </div>
+                <h3 class="text-xl font-semibold text-dark mb-3">怀化溆浦乡村振兴工作站智能宣传平台</h3>
+                <div class="space-y-3 text-gray-700 text-sm sm:text-base">
+                    <h4 class="font-medium text-primary">核心工作：</h4>
+                    <ul class="list-disc list-inside space-y-1 pl-2">
+                        <li>开发集人工智能大模型、多元信息交互与成果动态展示于一体的乡村振兴数字化平台</li>
+                        <li>运用 Vue 等前端框架与 Spring Boot 后端技术，实现了站点介绍、实践成果、AI 助手等模块，并利
+用后端RESTful API支撑了内容的动态管理与 AI 服务集成，打造了工作站在溆浦实践的数字化窗口</li>
+                        </ul>
+                    <h4 class="font-medium text-primary mt-2">项目价值：</h4>
+                    <p>项目获怀化市政府支持并已实际部署应用，为溆浦社会服务的智能化升级提供了技术支撑与宣传渠道</p>
+                </div>
+            </div>
+
+            <div class="project-card bg-neutral rounded-xl p-6 sm:p-7 border border-gray-100 card-hover" data-category="kaifa">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">开发项目</span>
+                    <span class="text-sm text-gray-500">2023.08-2023.09</span>
+                </div>
+                <h3 class="text-xl font-semibold text-dark mb-3">微信小程序--上课签到系统</h3>
+                <div class="space-y-3 text-gray-700 text-sm sm:text-base">
+                    <h4 class="font-medium text-primary">核心工作：</h4>
+                    <ul class="list-disc list-inside space-y-1 pl-2">
+                        <li>基于微信开发者工具开发的上课签到系统</li>
+                        <li>利用WXML、WXSS、JavaScript、SpringBoot、腾讯地图 SDK、wxCharts 等技术框架，实现了教师端的班级创建、签到发布与管理，及学生
+端的班级加入、时间与位置限制的签到功能</li>
+                        <li>系统采用组件化开发，提高了整体的可维护性和扩展性</li>
+                    </ul>
+                    <h4 class="font-medium text-primary mt-2">项目价值：</h4>
+                    <p>小程序已上线，结合七牛云存储服务，实现二维码的云端存储，有效减少负载</p>
                 </div>
             </div>
         </div>
@@ -596,7 +646,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center justify-center text-center">
             <h3 class="text-xl font-bold mb-4">沈思齐 - 个人简历</h3>
-            <p class="text-gray-400 mb-6">南京林业大学软件工程 | 保研至电子科技大学 | AI与生态科技融合研究者</p>
+            <p class="text-gray-400 mb-6">电子科技大学|25研 计算机技术专业|AI探索者</p>
             <div class="flex space-x-6 mb-6">
                 <a href="tel:15200273932" class="text-gray-400 hover:text-white transition-colors duration-200">
                     <i class="fa-solid fa-phone text-xl"></i>
